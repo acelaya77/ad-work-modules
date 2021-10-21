@@ -9,7 +9,7 @@
 @{
 
     # Script module or binary module file associated with this manifest.
-    # RootModule = ''
+    RootModule        = 'ad-work-modules.psd1'
 
     # Version number of this module.
     ModuleVersion     = '1.0.0'
@@ -66,10 +66,10 @@
     # FormatsToProcess = @()
 
     # Modules to import as nested modules of the module specified in RootModule/ModuleToProcess
-    # NestedModules = @()
+    NestedModules     = @('Convert-UserAccountControl')
 
     # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-    FunctionsToExport = @()
+    #FunctionsToExport = @('Convert-UserAccountControl')
 
     # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
     CmdletsToExport   = @()
@@ -84,7 +84,7 @@
     # DscResourcesToExport = @()
 
     # List of all modules packaged with this module
-    ModuleList        = @('Convert-UserAccountControl', 'Get-UserInfo')
+    #ModuleList        = @('Convert-UserAccountControl')
 
     # List of all files packaged with this module
     # FileList = @()
@@ -98,10 +98,10 @@
             # Tags = @()
 
             # A URL to the license for this module.
-            LicenseUri                 = 'https://github.com/acelaya77/ad-work-modules/blob/main/LICENSE'
+            LicenseUri = 'https://github.com/acelaya77/ad-work-modules/blob/main/LICENSE'
 
             # A URL to the main website for this project.
-            ProjectUri                 = 'https://github.com/acelaya77/ad-work-modules'
+            ProjectUri = 'https://github.com/acelaya77/ad-work-modules'
 
             # A URL to an icon representing this module.
             # IconUri = ''
@@ -116,7 +116,7 @@
             # RequireLicenseAcceptance = $false
 
             # External dependent modules of this module
-            ExternalModuleDependencies = @('ActiveDirectory')
+            #ExternalModuleDependencies = @('ActiveDirectory')
 
         } # End of PSData hashtable
 
